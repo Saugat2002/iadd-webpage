@@ -363,7 +363,7 @@ pre {
 
 /* ---------- responsive ---------- */
 @media (max-width: 860px) {
-  .cards, .phases { grid-template-columns: 1fr; }
+  .cards, .phases, .two-up { grid-template-columns: 1fr; }
   .card-img { height: 240px; }
 }
 

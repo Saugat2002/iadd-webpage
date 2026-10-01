@@ -76,10 +76,11 @@
 
 <!-- ===================== NAV ===================== -->
 <nav class="topnav" aria-label="Sections">
+  <a href="#motivation">Motivation</a>
   <a href="#abstract">Abstract</a>
   <a href="#method">Method</a>
-  <a href="#results">Results</a>
   <a href="#video">Video</a>
+  <a href="#results">Results</a>
   <a href="#bibtex">BibTeX</a>
 </nav>
 
@@ -116,9 +117,9 @@
 
 <main>
 
-<!-- ===================== TEASER ===================== -->
-<section id="teaser" class="section wide">
-  <p class="eyebrow">Teaser</p>
+<!-- ===================== MOTIVATION ===================== -->
+<section id="motivation" class="section wide">
+  <p class="eyebrow">Motivation</p>
   <h2 class="headline">Higher reward <em>without</em> giving up diversity.</h2>
   <p class="lead">
     RL fine-tuning of diffusion models (DDPO and its variants) tends to trade diversity and
@@ -204,6 +205,21 @@
         efficiency and rare-event discovery.</p>
     </div>
   </div>
+</section>
+
+<!-- ===================== VIDEO ===================== -->
+<section id="video" class="section wide">
+  <h2>Video</h2>
+  <figure class="figure">
+    <video controls playsinline preload="metadata" width="1280" height="720"
+      poster="./static/images/method.png">
+      <source src="./static/videos/iadd_demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      <a href="./static/videos/iadd_demo.mp4">Download the video</a> instead.
+    </video>
+    <figcaption>A walkthrough of iADD: the alignment-diversity tradeoff problem, the incremental
+      timestep curriculum, and Feynman&ndash;Kac branch/resample sampling.</figcaption>
+  </figure>
 </section>
 
 <!-- ===================== RESULTS ===================== -->
@@ -292,29 +308,6 @@
         vanishing point. iADD converges perspective lines while preserving texture.</figcaption>
     </figure>
   </div>
-
-  <h3>Rarity / rare-event success</h3>
-  <figure class="figure narrow">
-    <img src="./static/images/rarity_graph.jpeg" width="1590" height="790" loading="lazy"
-      alt="Chart comparing rare-event success probability across methods">
-    <figcaption>iADD achieves the strongest rare-event success rate among all compared methods,
-      consistent with its FK-guided exploration of low-probability, high-reward modes.</figcaption>
-  </figure>
-</section>
-
-<!-- ===================== VIDEO ===================== -->
-<section id="video" class="section wide">
-  <h2>Video</h2>
-  <figure class="figure">
-    <video controls playsinline preload="metadata" width="1280" height="720"
-      poster="./static/images/method.png">
-      <source src="./static/videos/iadd_demo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      <a href="./static/videos/iadd_demo.mp4">Download the video</a> instead.
-    </video>
-    <figcaption>A walkthrough of iADD: the alignment-diversity tradeoff problem, the incremental
-      timestep curriculum, and Feynman&ndash;Kac branch/resample sampling.</figcaption>
-  </figure>
 </section>
 
 <!-- ===================== BIBTEX ===================== -->
