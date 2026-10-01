@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://saugat2002.github.io/iadd-webpage/sitemap.xml
+
+# This repo's content has moved to https://saugat2002.github.io/iADD/
